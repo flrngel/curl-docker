@@ -1,4 +1,5 @@
-#!/sh
+#!/bin/sh
+set -e
 
 trap "exit" SIGINT SIGTERM
 
