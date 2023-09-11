@@ -1,3 +1,5 @@
 FROM alpine/curl
 
-CMD ["./entrypoint.sh"]
+ADD entrypoint.sh /entrypoint.sh
+
+CMD ["/entrypoint.sh"]
