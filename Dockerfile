@@ -4,4 +4,4 @@ ADD entrypoint.sh /entrypointz.sh
 RUN chmod +x /entrypointz.sh
 
 CMD ["tail", "-f", "/dev/null"]
-ENTRYPOINT ["/entrypointz.sh"]
+ENTRYPOINT []
