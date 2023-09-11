@@ -1,7 +1,6 @@
 FROM alpine/curl
 
-ADD entrypoint.sh /entrypointz.sh
-RUN chmod +x /entrypointz.sh
+ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
-CMD ["tail", "-f", "/dev/null"]
-ENTRYPOINT []
+ENTRYPOINT ["/entrypoint.sh"]
